@@ -37,14 +37,27 @@ section
     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.91) 82%,rgba(0,0,0,0.91) 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#00000000', endColorstr='#e8000000',GradientType=0 ); 
 }
-section button
+section .btn_sign
 {
 	width: 110px;
 	height: 50px;
 	margin: 0 auto;
 	border-radius: 10px;
 	color: white;
+	background: -moz-linear-gradient(right,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(226,0,191,0.91) 82%, rgba(226,0,191,0.91) 100%);
+    background: -webkit-linear-gradient(right,  rgba(0,0,0,0) 0%,rgba(0,0,0,20%) 1%,rgba(0,0,0,0.91) 82%,rgba(0,0,0,0.91) 100%); 
+    background: linear-gradient(to left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(137,0,191,0.91) 82%,rgba(137,0,191,0.91) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#00000000', endColorstr='#e8000000',GradientType=0 ); 
+    clear: both;
 }
+section .btn_log
+{
+	width: 110px;
+	height: 50px;
+	margin: 0 auto;
+	border-radius: 10px;
+	color: white;
+	}
 section a
 {
 	font-size: 20px;
