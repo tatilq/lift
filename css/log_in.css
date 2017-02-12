@@ -1,0 +1,96 @@
+:focus { outline: none; } 
+header p
+{
+	font-size: 20px;
+}
+.anterior i
+{
+	margin-top: 20px;
+	font-size:40px;
+}
+section .btn_log
+{
+	width: 100%;
+	padding: 10px; 
+	background-color: rgba(244,63,233,0.6);
+	color: white;
+	border:none;
+	border-radius: 10px;
+}
+section a
+{
+	font-size: 30px;
+}
+.next
+{
+	position: absolute;
+	bottom:0px;
+    right:0px;
+    left: 0px;
+	margin-bottom: 10px;
+}
+
+/*PARTE DEL FORMULARIO DE EMAIL Y USER*/
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input 
+{
+    padding-left: 30px;
+}
+.left-inner-addon i 
+{
+  position: absolute;
+  padding: 12px 12px;
+ 
+}
+
+/*ESTILOS AL PLACEHOLDER*/
+.user input::-webkit-input-placeholder {
+  color: #D7D7D9;
+}
+.user input:-moz-placeholder {
+  color: #D7D7D9;
+}
+.user input:-ms-input-placeholder {
+  color: #D7D7D9;
+}
+.user input[placeholder] {
+  color: blue;
+  font-size: 15px;
+}
+
+/*ESTILOS DE PRUEBA*/
+.prueba span
+{
+	background-color: white;
+	border-right: none;
+	border-left: none;
+	box-shadow: none;
+
+}/*
+#remitosucursal
+{
+	background-color: white;
+	border-right: none;
+	box-shadow: none;
+}
+#remitonumero
+{
+border-left: none;
+	box-shadow: none;
+
+}*/
+#remitonumero :focus{
+	box-shadow: none;
+	border-left: 1px solid black;
+}
+#name , #email
+{
+	border-radius: 5px;
+	border-bottom: 1.3px solid black;
+	border-right: 1.3px solid black;
+	width: 100%;
+	padding: 10px 10px 10px 30px;
+}
+

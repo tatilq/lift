@@ -1,0 +1,38 @@
+section .codigo_postal{
+	margin: 0 auto;
+
+}
+header p
+{
+	font-size: 20px;
+}
+.bandera
+{
+	width: 110%;
+}
+section .btn_log
+{
+	width: 100%;
+	padding: 10px; 
+	background-color: rgba(244,63,233,0.6);
+	color: white;
+	border:none;
+	border-radius: 10px;
+}
+section a
+{
+	font-size: 30px;
+}
+.next
+{
+	position: absolute;
+	bottom:0px;
+    right:0px;
+    left: 0px;
+	margin-bottom: 10px;
+}
+.anterior i
+{
+	margin-top: 20px;
+	font-size:40px;
+}
