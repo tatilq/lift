@@ -6,6 +6,10 @@ header p
 {
 	font-size: 20px;
 }
+.tituto
+{
+	margin-left:20px;
+}
 .bandera
 {
 	width: 110%;
@@ -17,7 +21,7 @@ section .btn_log
 	background-color: rgba(244,63,233,0.6);
 	color: white;
 	border:none;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 section a
 {

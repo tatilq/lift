@@ -4,6 +4,10 @@ header p
 {
 	font-size: 20px;
 }
+.tituto
+{
+	margin-left:20px;
+}
 .anterior i
 {
 	margin-top: 20px;
@@ -16,7 +20,7 @@ section .btn_log
 	background-color: rgba(244,63,233,0.6);
 	color: white;
 	border:none;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 section a
 {
@@ -56,20 +60,20 @@ section a
 	box-shadow: none;
 	padding: 0px;
 }
-#s
+#icon
 {
 	background-color: white;
 	border-right: none;
 	box-shadow: none;
 }
-#remitosucursal
+#name
 {
 	background-color: white;
 	border-right: none;
 	border-left: none;
 	box-shadow: none;
 }
-#remitonumero
+#lastname
 {
 border-left: none;
 	box-shadow: none;
