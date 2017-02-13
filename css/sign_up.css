@@ -18,7 +18,7 @@ section .btn_log
 {
 	width: 100%;
 	padding: 10px; 
-	background-color: rgba(244,63,233,0.6);
+	background-color: #EA0B8C;
 	color: white;
 	border:none;
 	border-radius: 5px;

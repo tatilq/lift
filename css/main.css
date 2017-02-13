@@ -39,20 +39,22 @@ section
 }
 section .btn_sign
 {
-	width: 120px;
+	width: 150px;
 	height: 60px;
 	margin: 0 auto;
 	border-radius: 5px;
 	color: white;
-	background: -moz-linear-gradient(right,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(226,0,191,0.91) 82%, rgba(226,0,191,0.91) 100%);
-    background: -webkit-linear-gradient(right,  rgba(0,0,0,0) 0%,rgba(0,0,0,20%) 1%,rgba(0,0,0,0.91) 82%,rgba(0,0,0,0.91) 100%); 
-    background: linear-gradient(to left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(137,0,191,0.91) 82%,rgba(137,0,191,0.91) 100%); 
+	
+    background: linear-gradient(to right, rgba(184,11,140,0.1) 10% ,rgba(184,11,140,0.3) 30%,rgba(184,11,140,0.7) 50%, rgb(255,9,150) 100%  ); 
     filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#00000000', endColorstr='#e8000000',GradientType=0 ); 
     clear: both;
+
+    /**linear-gradient(to bottom right,#EA0B8C,#B80B8C);
+    background: linear-gradient(to bottom right,#EA0B8C 10%,#B80B8C 20%);*/
 }
 section .btn_log
 {
-	width: 120px;
+	width: 150px;
 	height: 60px;
 	margin: 0 auto;
 	border-radius: 5px;
