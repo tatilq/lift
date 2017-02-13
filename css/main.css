@@ -45,7 +45,7 @@ section .btn_sign
 	border-radius: 5px;
 	color: white;
 	
-    background: linear-gradient(to right, rgba(184,11,140,0.1) 10% ,rgba(184,11,140,0.3) 30%,rgba(184,11,140,0.7) 50%, rgb(255,9,150) 100%  ); 
+    background: linear-gradient(to right, rgba(184,11,140,0.1) 10% ,rgba(184,11,140,0.4) 40%,rgba(255,0,166,0.7) 70%, rgb(255,0,166) 100%  ); 
     filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#00000000', endColorstr='#e8000000',GradientType=0 ); 
     clear: both;
 
