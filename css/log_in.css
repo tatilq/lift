@@ -1,41 +1,16 @@
 
-/*:focus { outline: none; } */
-header p
+/**********************PARTE DEL HEADER**************************/
+header small
 {
-	font-size: 20px;
-}
-.tituto
-{
-	margin-left:20px;
+	font-size: 15px;
 }
 .anterior i
 {
 	margin-top: 20px;
 	font-size:40px;
 }
-section .btn_log
-{
-	width: 100%;
-	padding: 10px; 
-	background-color: #EA0B8C;
-	color: white;
-	border:none;
-	border-radius: 5px;
-}
-section a
-{
-	font-size: 30px;
-}
-.next
-{
-	position: absolute;
-	bottom:0px;
-    right:0px;
-    left: 0px;
-	margin-bottom: 10px;
 
-}
-
+/********************PARTE DEL USER Y EMAIL**************************/
 /*ESTILOS AL PLACEHOLDER*/
 .user input::-webkit-input-placeholder {
   color: #D7D7D9;
@@ -47,44 +22,77 @@ section a
   color: #D7D7D9;
 }
 .user input[placeholder] {
-  color: blue;
+  color: black;
   font-size: 15px;
 }
-
-/*ESTILOS DE PRUEBA*/
-.user #sp
+/*ESTILOS DE INPUT*/
+#icon,#name,#lastname, #email, #add
+{
+	box-shadow: none;
+}
+#add
 {
 	background-color: white;
 	border-right: none;
 	border-left: none;
-	box-shadow: none;
 	padding: 0px;
 }
 #icon
 {
 	background-color: white;
 	border-right: none;
-	box-shadow: none;
+    padding: 0px 5px 0px 6px;
+    font-size: 17px;
+    color: grey;
 }
 #name
 {
 	background-color: white;
 	border-right: none;
 	border-left: none;
-	box-shadow: none;
+	padding: 0px;
 }
-#lastname
+#lastname, #email
 {
-border-left: none;
-	box-shadow: none;
-
+	border-left: none;
+	padding: 0px;
 }
 
-/*TERMINOS Y CONDICIONES*/
+/************************************TERMINOS Y CONDICIONES***************************/
 .terminos
 {
 	color:black;
 	font-weight: 
 	margin:0px auto;
+}
+.terminos label
+{
+	
 
 }
+#check
+{
+	background-color: red;
+	border:2px dotted #00f;
+}
+
+/************************************PARTE DEL BOTON NEXT******************************/
+section .btn_log
+{
+	width: 100%;
+	padding: 10px; 
+	background-color: #EA0B8C;
+	color: white;
+	border:none;
+	border-radius: 5px;
+}
+.next
+{
+	position: absolute;
+	bottom:0px;
+    right:0px;
+    left: 0px;
+	margin-bottom: 10px;
+
+}
+
