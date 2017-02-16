@@ -8,7 +8,10 @@ var paises='[{"nombre":"Australia","codigo": "61"},{"nombre":"Canada","codigo": 
   var p =JSON.parse(paises);
   console.log(p[1].nombre);
   console.log(p[1].codigo);
-
+  for(var i=0;i<p.length;i++)
+  {
+    localStorage.setItem('srcImgPais',srcPais);
+  }
  /*
   {
     "name": "Afghanistan",

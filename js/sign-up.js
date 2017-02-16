@@ -11,22 +11,30 @@ function checkInput_nombre(evt)
 function init()
 {
 	var imgPaises=document.getElementById("imgPais");
-	var src=localStorage.getItem('srcImgPais');
-	console.log(src);
-	imgPaises.src=src;
+	var code=document.getElementById("code");
+	var srcLocal=localStorage.getItem('srcImgPais');
+	var codeLocal=localStorage.getItem('codigo');
+	imgPaises.src=srcLocal;
+	code.textContent=codeLocal;
 }
 function getGeneraRandom(a,b) 
 {
-        return Math.random() *((a-b) + b);
+    return Math.random() *((a-b) + b);
 }
 function  generaRandom()
 {
-	var laboratoria= "LAB-";
-	var randomNum= getGeneraRandom(999,100);
-	var codigo= laboratoria+Math.floor(randomNum);
-	localStorage.setItem('codigoLab',codigo);
-    alert("su codigo es: "+codigo);
+	var numero=document.getElementById("numero");
+	console.log(numero.value.length);
+	var long=numero.value.length;
+	if(long==9)
+	{
+		btn_log.setAttribute("disabled","false");
+		var laboratoria= "LAB-";
+		var randomNum= getGeneraRandom(999,100);
+		var codigo= laboratoria+Math.floor(randomNum);
+		localStorage.setItem('codigoLab',codigo);
+	    alert("su codigo es: "+codigo);
+	    ref.href="sign-up2.html";
+	}
+	
 }
-
-
-

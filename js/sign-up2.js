@@ -11,21 +11,19 @@ function validateForm(){
   validaName();
   validaLastname(); 
   validaEmail(); 
-  if(validaName() == true && validaLastname()==true && validaEmail()==true )
+  chequear();
+  if(validaName() == true && validaLastname()==true && validaEmail()==true && chequear())
   {
-    if(isNotExist){
-      var a=document.createElement("a");
-      a.href="app.html";
-      a.setAttribute("text-decoration","none");
-      salida.appendChild(a);
-      a.appendChild(btn_enviar);
-      isNotExist=false;
+      var enviarForm=document.getElementById("enviarForm");
+      enviarForm.href="app.html";
       //SI LOS DATOS SON CORRECTOS LOS GUARDAMOS LOCALEMNTE
       localStorage.setItem('LastName',lastname.value);
       localStorage.setItem('Name',nombre);
       localStorage.setItem('Email',email.value);
-      
-    }
+  }
+  else
+  {
+    alert("Falta llenar Datos");
   }
 }
 //----------------------------------------CONVIERTE LA PRIMERA LETRA EN MAYUSCULA---------------------------------//
@@ -101,6 +99,21 @@ function validaEmail()
   else{
     containerEmail.innerHTML="<small style='color:red;'>Invalido Ejm: name@domain.com, max 50 caracteres</small>";
     email.style.backgroundColor="#FFDDE5";
+    isValid=false;
+  }
+  return isValid;
+}
+function chequear()
+{
+  var isValid=false;
+
+  var check=document.getElementById("check");
+  if(check.checked)
+  {
+    isValid=true;
+  }
+  else
+  {
     isValid=false;
   }
   return isValid;
