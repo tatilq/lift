@@ -1,34 +1,13 @@
 
-var paises='{"nombre": ["Afganistán"],"phone_code": ["93"]}';
-var li=document.getElementsByTagName("li");
+var paises='[{"nombre":"Australia","codigo": "61"},{"nombre":"Canada","codigo": "1"},'+
+    '{"nombre":"China","codigo": "86"},{"nombre":"Francia","codigo": "33"},'+
+    '{"nombre":"India","codigo": "91"},{"nombre":"Japon","codigo": "81"},'+
+    '{"nombre":"Mexico","codigo": "52"},{"nombre":"Puerto Rico","codigo": "1"},'+
+    '{"nombre":"Peru","codigo": "51"}]';
 
-var p =JSON.parse(paises);
-//console.log(p);
-p.nombre.push("Arabia Saudita");
-p.phone_code.push("966");
-
-p.nombre.push("Argentina");
-p.phone_code.push("54");
-
-p.nombre.push("Aruba");
-p.phone_code.push("297");
-
-console.log(p.nombre.length);
-console.log(p.nombre);
-console.log(p.phone_code);
-function f()
-{
-	for(var i=0;i<li.length;i++)
-	{
-		console.log(p.nombre[i]);
-
-	}
-}
-	//console.log(li[i]);
-
- //creando objetos en js en un for y arreglo 
-
- //bootstrap.formhelper jquery para hacerlo
+  var p =JSON.parse(paises);
+  console.log(p[1].nombre);
+  console.log(p[1].codigo);
 
  /*
   {

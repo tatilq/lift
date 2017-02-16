@@ -1,6 +1,6 @@
-section .codigo_postal{
+section .codigo_postal
+{
 	margin: 0 auto;
-
 }
 header p
 {
@@ -10,9 +10,13 @@ header p
 {
 	margin-left:20px;
 }
-.bandera
+#btn_pais 
 {
-	width: 110%;
+	padding: 10px 20px 10px 10px;
+}
+#numero
+{
+	padding: 20px;
 }
 section .btn_log
 {
@@ -39,4 +43,16 @@ section a
 {
 	margin-top: 20px;
 	font-size:40px;
+}
+#code
+{
+	border-right:none;
+	border-left:none;
+	background-color:white;
+	box-shadow: none;
+}
+#numero
+{
+	border-left: none;
+	box-shadow: none;
 }

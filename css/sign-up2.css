@@ -65,11 +65,7 @@ header small
 	font-weight: 
 	margin:0px auto;
 }
-.terminos label
-{
-	
 
-}
 #check
 {
 	background-color: red;
@@ -81,6 +77,7 @@ section .btn_log
 {
 	width: 100%;
 	padding: 10px; 
+	font-size: 30px;
 	background-color: #EA0B8C;
 	color: white;
 	border:none;
@@ -95,4 +92,3 @@ section .btn_log
 	margin-bottom: 10px;
 
 }
-

@@ -9,10 +9,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Schoolbell" rel="stylesheet">
 	<link rel="shortcut icon" href="ico_lyft.ico">
-
 	<title>lift</title>
 </head>
-<body>
+<body onload="init()">
 <header>
 	<div class="container ">
   		<div class="row  ">
@@ -30,36 +29,32 @@
 </header>
 <section class="postal codigo_postal">
 	<div class="container">
-		<div class="row text-center">
-		  <div class="col-xs-8 col-sm-8 col-md-8 col-xs-offset-2">
-		    <div class="input-group ">
-		      <div class="input-group-btn "><a href="country.html">
-		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Flag_of_Peru_(state).svg/2000px-Flag_of_Peru_(state).svg.png" class="img_responsive bandera"> <span class="caret"></span>
-		        </button></a>
-		        <ul class="dropdown-menu">
-		        <!--Aqui se enlistan los paises-->
-		        <a href=""></a>
-		        </ul>
-		      </div>
-		      <input type="text" class="form-control" aria-label="..." placeholder="925796255">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10 ">     
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <a type="button" class="btn btn-default" aria-expanded="false" id="btn_pais" href="country.html"><img src="img/peru.png" style="width: 200%;" id="imgPais" alt=""><span class="caret"></span></a>
 
-		    </div>
-		    <br>
-		    <p>We'll send a text to verify your phone</p>
-		  </div>
-		</div>
-	</div>
+                    </div>
+                    <span class="input-group-addon" id="code">+51</span>
+                    <input type="text" id="numero" class="form-control" aria-label="..." placeholder="123456" onkeydown="checkInput_nombre(event)">
+                </div>
+                <br>   
+            <p class="text-center">We'll send a text to verify your phone</p>
+        </div>
+        </div>
+    </div>
 </section>
-
 <section class="next">
 	<div class="container">
 		<div class="row  ">
 	        <div class="col-xs-12 col-sm-12 col-md-12 text-center ">
-				<a style="text-decoration: none;" href="log_in.html"><button class="btn_log">Next</button></a>
+				<a style="text-decoration: none;" href="sign-up2.html"><button  class="btn_log" onclick="generaRandom()">Next</button></a>
 			</div>
 		</div>
 	</div>
 </section>
-<script src="js/json.js" type="text/javascript"></script>
+
+<script src="js/sign-up.js" type="text/javascript"></script>
 </body>
 </html>

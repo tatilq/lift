@@ -11,37 +11,43 @@
 	<link rel="shortcut icon" href="ico_lyft.ico">
 	<title>Lyft</title>
 </head>
-<body>
-<!--******************************************PARTE DEL HEADER COMUN*******************************************-->
+<body onload="init()">
+<!--******************************************PARTE DEL HEADER COMUN**************************************-->
 <header>
-	<div class="container ">
-  		<div class="row  ">
-	  		<div class="col-xs-10 col-sm-10 col-md-10 text-center ">
+	<div class="container">
+  		<div class="row ">
+	  		<div class="col-xs-10 col-sm-10 col-md-10 text-center">
 			    <h1>Select Country</h1>
-			    <span></span>
 	        </div>
-			<div class="col-xs-1 col-sm-1 col-md-1 anterior">
-				<a style="text-decoration: none; color: black;" href="sign-up.html">Close</a>
-			</div>
+	        <div class="col-xs-2 col-sm-2 col-md-2">
+	        	<a href="sign-up.html"  style="text-decoration: none;"class="btn_default">Close</a>
+	        </div>
+			
       	</div>
     </div>
 </header>
-<!--*******************************************PARTE DE LOS PAISES*******************************************-->
+<!--*******************************************PARTE DE LOS PAISES*****************************************-->
 <section class="paises">
 	<div class="container">
-		<div class="col-md-10 offset-md-1">
-			<ul class="list-unstyled">
-				<li><img src="img/australia.png"  class="img_responsive bandera">Australia</li>
-				<li> <img src="img/canada.png" class="img_responsive bandera">Canada</li>
-				<li><img src="img/china.png" class="img_responsive bandera">China</li>
-				<li><img src="img/francia.jpg" class="img_responsive bandera">France</li>
-				<li><img src="img/india.gif" class="img_responsive bandera">India</li>
-				<li><img src="img/Japan.gif" class="img_responsive bandera">Japan</li>
-				<li><img src="img/mexico.png" class="img_responsive bandera">Mexico</li>
-				<li><img src="img/puerto_rico.png" class="img_responsive bandera">Puerto Rico</li>
-				<li><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Nordic_flag_of_the_United_Kingdom_(Proposal).PNG" class="img_responsive bandera">United kingdom</li>
-				<li><img src="img/peru.png" class="img_responsive bandera"> Peru</li>
-			</ul>
+		<div class="row ">
+			<div class=" col-md-12 ">
+				<ul class="list-unstyled " id="lista_paises">
+					<a href="sign-up.html"><li select=""><img src="img/australia.png"  class="img_responsive bandera">Australia</li></a>
+					<a href="sign-up.html"><li><img src="img/canada.png" class="img_responsive bandera">Canada</li></a>
+					<a href="sign-up.html"><li><img src="img/china.png" class="img_responsive bandera">China</li></a>
+					<a href="sign-up.html"><li><img src="img/francia.jpg" class="img_responsive bandera">Francia</li></a>
+					<a href="sign-up.html"><li><img src="img/india.gif" class="img_responsive bandera">India</li></a>
+					<a href="sign-up.html"><li><img src="img/Japan.gif" class="img_responsive bandera">Japon</li></a>
+					<a href="sign-up.html"><li><img src="img/mexico.png" class="img_responsive bandera">Mexico</li></a>
+					<a href="country.html"><li><img src="img/puerto_rico.png" class="img_responsive bandera">Puerto Rico</li></a>
+					<a href="sign-up.html"><li><img src="img/EeUu.gif" class="img_responsive bandera">Estados Unidos</li></a>
+					<a href="sign-up.html"><li><img src="img/peru.png" class="img_responsive bandera">Peru</li></a>
+				</ul>
+			</div>
 		</div>
 	</div>
 </section>
+ <script type="text/javascript" src="js/country.js"></script>
+ <script type="text/javascript" src="js/json.js"></script>
+</body>
+</html>
