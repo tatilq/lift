@@ -3,7 +3,7 @@ function init(){
 	
 	var paises='[{"nombre":"Australia","codigo": "61" , "img":"img/australia.png"},{"nombre":"Canada","codigo": "1" ,"img":"img/canada.png"},'+
 	    '{"nombre":"China","codigo": "86" , "img":"img/china.png"},{"nombre":"Francia","codigo": "33" , "img":"img/francia.jpg"},'+
-	    '{"nombre":"India","codigo": "91","img":"img/india.gif"},{"nombre":"Japon","codigo": "81","img":"img/Japan.gif"},'+
+	    '{"nombre":"India","codigo": "91","img":"img/india.gif"},{"nombre":"Japon","codigo": "81","img":"img/japan.gif"},'+
 	    '{"nombre":"Mexico","codigo": "52","img":"img/mexico.png"},{"nombre":"Puerto Rico","codigo": "1","img":"img/puerto_rico.png"},'+
 	    '{"nombre":"Peru","codigo": "51","img":"img/peru.png"},{"nombre":"Estados Unidos","codigo":"1","img":"img/EeUu.gif"}]';
 
