@@ -2,10 +2,33 @@
 function checkInput_nombre(evt)
 {
   if(window.event.keyCode >='48' && window.event.keyCode<='57' || window.event.keyCode =='8')
-  	
       return true;
   else
       evt.preventDefault();
+}
+function validaLongitud()
+{
+	var isValid=false;
+	var numero=document.getElementById("numero");
+	
+	var long=numero.value.length;
+	if(long==9)
+	{
+		salida.innerHTML="<span style='color:green;'>Numero Valido ";
+		isValid=true;
+	}
+	else if(long>9)
+	{
+		salida.innerHTML=" <span style='color:red;'>Sobran Datos, Max 9 Caracteres";
+		isValid=false;
+	}
+	else
+	{
+		salida.innerHTML=" <span style='color:red;'>Faltan Llenar Datos, 9 Caracteres";
+		isValid=false;
+	}
+	return isValid;
+
 }
 /*FUNCION QUE SE EJECUTA AL CARGAR LA PAGINA */
 function init()
@@ -23,10 +46,7 @@ function getGeneraRandom(a,b)
 }
 function  generaRandom()
 {
-	var numero=document.getElementById("numero");
-	console.log(numero.value.length);
-	var long=numero.value.length;
-	if(long==9)
+	if(validaLongitud()==true)
 	{
 		btn_log.setAttribute("disabled","false");
 		var laboratoria= "LAB-";

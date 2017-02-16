@@ -37,8 +37,10 @@
 
                     </div>
                     <span class="input-group-addon" id="code">+51</span>
-                    <input type="text" id="numero"  class="form-control" aria-label="..." placeholder="123456">
+                    <input type="text" id="numero"  class="form-control" aria-label="..." placeholder="123456789" onkeydown="checkInput_nombre(event)" onkeyup="validaLongitud()">
                 </div>
+                <div  id="salida" class="text-center"></div>
+
                 <br>   
             <p class="text-center">We'll send a text to verify your phone</p>
         </div>
@@ -54,7 +56,6 @@
 		</div>
 	</div>
 </section>
-
 <script src="js/sign-up.js" type="text/javascript"></script>
 </body>
 </html>
