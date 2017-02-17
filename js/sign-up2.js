@@ -1,7 +1,7 @@
 
 var nombre;
 //-------------------------------FUNCION PRINCIPAL LLAMA A LAS DEMAS FUNCIONES---------------------//
-//------------------------NO SE PUEDE MANDAR EL FORMULARIO SI LOS CAMPOS NO SON CORRECTOS----------//
+//-----------------------NO SE PUEDE MANDAR EL FORMULARIO SI TODOS LOS CAMPOS NO SON CORRECTOS----------//
 function validateForm(){    
   var salida_enviar=document.getElementById("salida_enviar");
   var btn_enviar=document.getElementById("btn_enviar");
@@ -23,7 +23,7 @@ function validateForm(){
   }
   else
   {
-    alert("Falta llenar Datos");
+    alert("Todos los campos son Obligatorios");
   }
 }
 //----------------------------------------CONVIERTE LA PRIMERA LETRA EN MAYUSCULA---------------------------------//
@@ -103,6 +103,7 @@ function validaEmail()
   }
   return isValid;
 }
+//---------------------------VALIDA QUE EL CHECKBOX ESTE CHEADO EN TERMINOS Y CONDICIONES---------------------------//
 function chequear()
 {
   var isValid=false;
@@ -118,3 +119,4 @@ function chequear()
   }
   return isValid;
 }
+//----------------------------------------------------------FIN----------------------------------------------------//

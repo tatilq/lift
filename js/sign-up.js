@@ -1,4 +1,4 @@
-/*FNCION QUE SOLO ME RESTRINGE NUMEROS PARA MI INPUT DEL TELEFONO*/
+/*****************************FUNCION QUE SOLO ME RESTRINGE NUMEROS PARA MI INPUT DEL TELEFONO********************/
 function checkInput_nombre(evt)
 {
   if(window.event.keyCode >='48' && window.event.keyCode<='57' || window.event.keyCode =='8')
@@ -6,6 +6,7 @@ function checkInput_nombre(evt)
   else
       evt.preventDefault();
 }
+/*****************************FUNCION QUE VALIDA LA LONGITUD MAX 9 CARACTERES DEL TELEFONO***********************/
 function validaLongitud()
 {
 	var isValid=false;
@@ -30,7 +31,7 @@ function validaLongitud()
 	return isValid;
 
 }
-/*FUNCION QUE SE EJECUTA AL CARGAR LA PAGINA */
+/***********FUNCION QUE SE EJECUTA AL CARGAR LA PAGINA Y ACTUALIZA LA BANDERA Y CODIGO QUE SELECCIONE*************/
 function init()
 {
 	var imgPaises=document.getElementById("imgPais");
@@ -40,10 +41,12 @@ function init()
 	imgPaises.src=srcLocal;
 	code.textContent=codeLocal;
 }
+/******************************************FUNCION RAMDOOM PARA NUMEROS DE 3 CIFRAS*******************************/
 function getGeneraRandom(a,b) 
 {
     return Math.random() *((a-b) + b);
 }
+/***********************FUNCION QUE SOLO GENERA EL CODIGO ALEATORIO SI EL TELEFONO ES CORRECTO*****************/
 function  generaRandom()
 {
 	if(validaLongitud()==true)
@@ -58,3 +61,4 @@ function  generaRandom()
 	}
 	
 }
+/***************************************************FIN**********************************************************/
