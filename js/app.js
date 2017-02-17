@@ -18,7 +18,7 @@ function mostrar(posicion)
 
   lati=posicion.coords.latitude;
   longi=posicion.coords.longitude;
-  initMap(lati, longi,a);
+  initMap(lati, longi);
 }
 //--------------------------------------FUNCION PARA GESTIONAR ALGUN TIPO DE ERROR------------------------------//
 function gestionarErrores(error)
@@ -27,7 +27,7 @@ function gestionarErrores(error)
   'a internet y habilite la opción permitir compartir ubicación física');
 }
 //-----------------FUNCION QU CARGA EL MAPA, CON LA LATITUD Y LONGITUD DE TU POSICION ACTUAL--------------------//
-function initMap(lati, longi,a) 
+function initMap(lati, longi) 
 {
   var positionActual={lat: lati, lng: longi};
   var position1={lat:  -16.4349299, lng: -71.5342893};
